@@ -1,89 +1,37 @@
 
-  /* navbarre style début*/
+@import "base/base";
+@import "base/display";
+@import "base/typography";
+
+@import "layout/container";
+@import "layout/navbar";
+@import "layout/btn";
+
+@import "pages/home";
+
+/* navbarre style début*/
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: red solid 1px;
+    //border: red solid 1px;
 }
 
-.container{
-  max-width: 1110px;
-  padding: 0 39px;
-  @media (min-width: 1200px) {
-    margin: auto;
-    padding: 0px;
-  }
-  &-fluid{
-    width: 100%;
-    padding: 0 39px;
-  }
-}
-
-body{
-   height: 100vh;
-   width: 100%;
-   /* position: fixed; */
-}
-header nav li, a, button{
-    font-weight: 500;
-    font-size: 25px;
-    color: black;
-    text-decoration: none;
-}
-
-header{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px 10px;
-}
 
 .logo{
     cursor: pointer;
     height: 70px;
     width: 80px;
     margin-right: auto ;
-
-}
-.navbarre{
-    list-style: none;
 }
 
-.navbarre li {
-    display: inline-block;
-    padding: 0px 20px;
-}
 
-.navbarre li a {
-    transition: all 0.3s ease 0s;
-}
-
-.navbarre li a:hover {
-    color: rgb(28, 85, 127);
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-header button {
-    margin: left 20px; ;
-    padding: 9px 25px;
-    background-color: rgb(38, 76, 132);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-button:hover {
-    background-color: rgb(28, 85, 127);
-}
 /* navbarre style fin */
 /* Acceuil page 1 */
 .acceuilinfos .image{
     position: relative;
-     background-image: url("images/W2.jpeg");
+     background-image: url("../images/W2.jpeg");
      background-size: cover;
      background-repeat: no-repeat;
     background-position: center;
@@ -97,14 +45,14 @@ button:hover {
 .textacceuil{
     top: -5%;
     left: 5%;
-    position: absolute; 
+    position: absolute;
     width: 700px;
     height: 200px;
     margin: 40px;
     font-size: 20px;
     color: white;
     line-height: 50px;
-    font-weight:bolder; 
+    font-weight:bolder;
 }
 
 .acceuil{
@@ -112,7 +60,7 @@ button:hover {
     background-color: rgb(28, 95, 163);
     top: 50%;
     left: 20%;
-     position: relative; 
+     position: relative;
     width: 800px;
     height: 200px;
 }
@@ -128,20 +76,20 @@ button:hover {
 
 .deuxiemepage .image2{
     position: relative;
-     background-image: url("images/W3.jpeg");
+     background-image: url("../images/W3.jpeg");
      background-size: cover;
      background-repeat: no-repeat;
     background-position: center;
      object-fit: cover;
      width: 100vw;
      height: 70vh;
-     
+
  }
 
  .textacceuil2{
     top: -5%;
     left: 5%;
-    position: absolute; 
+    position: absolute;
     width: 700px;
     height: 200px;
     margin: 40px;
@@ -156,13 +104,13 @@ button:hover {
      background-color: rgb(28, 95, 163);
      top: 50%;
      left: 40%;
-     position: relative; 
+     position: relative;
      width: 800px;
      height: 200px;
-    
+
  }
  .deuxiemepage{
-     
+
  }
 
  .aproposdenous{
@@ -171,7 +119,7 @@ button:hover {
     /* background-color: rgb(184, 215, 215); */
     /* top: 80%; */
    /* position: relative; */
-    
+
  }
 .titreapropos{
    font-size: 70px;
@@ -185,13 +133,13 @@ button:hover {
 }
 
 .textapropos12{
-    
+
     margin-bottom: -14%;
 }
 .aproposimage{
     height: 800px;
     width: 600px;
-    
+
     /* background-color: aqua; */
     margin-left: 70%;
     margin-top: -35%;
@@ -205,8 +153,8 @@ button:hover {
     margin-left: 50px;
     font-size: 25px;
     color: rgba(63, 94, 124, 0.885);
-    
-    
+
+
 }
 
 .textapropos2{
@@ -217,8 +165,8 @@ button:hover {
     border: none;
     background-color: rgba(63, 94, 124, 0.885);
     border-radius: 20px;
-    
-   
+
+
 }
 
 .calltoaction{
@@ -227,18 +175,18 @@ button:hover {
     background-color: rgba(1, 50, 78, 0.833);
     display: flex;
     justify-content: space-between;
-    background-image: url("images/page33.jpeg");
+    background-image: url("../images/page33.jpeg");
 }
 
 .texteapropos .image1 img{
      margin-left: 90%;
-    margin-bottom: 100%; 
+    margin-bottom: 100%;
     width: 500px;
    height: 500px;
 }
 
 .textinspiration{
-   
+
     margin-left: 35%;
    background-color: rgba(63, 94, 124, 0.885);
    border-radius: 15px;
@@ -251,35 +199,35 @@ button:hover {
     height: 400px;
     font-size: 50px;
     color: white;
-    margin-top: 15%; 
+    margin-top: 15%;
 }
 
 .valeursection{
     width: 100vw;
     height: 85vh;
-   
-    
+
+
 }
 
 .valeurtitre{
     font-size: 70px;
    margin-left: 35%;
    color: rgba(5, 36, 64, 0.779);
-   margin-top: 50px; 
+   margin-top: 50px;
 }
 .valeurimage{
     width: 100vw;
     height: 65vh;
     background-color: rgba(236, 238, 243, 0.361);
-   background-image: url("images/R5.png"); 
+   background-image: url("../images/R5.png");
     background-repeat: no-repeat;
     display: flex;
-   
+
 }
 
 
 .valeur1{
-    margin-left: 900px;  
+    margin-left: 900px;
    height: 200px;
    width: 320px;
    margin-top: 15%;
@@ -287,19 +235,19 @@ button:hover {
    font-size: 30px;
    color: white;
    border-radius: 10px;
-    
+
 }
 
 .valeur2{
     margin-left: 600px;
-    margin-top: 15%; 
+    margin-top: 15%;
     height: 200px;
    width: 370px;
    background-color: rgba(5, 36, 64, 0.758);
    font-size: 30px;
    color: white;
    border-radius: 10px;
-    
+
 }
 
 .footersection{
@@ -307,7 +255,7 @@ button:hover {
     height: 65vh;
     background-color: rgba(5, 36, 64, 0.758);
     margin-bottom: 70px;
-    
+
 }
 
 .rectangle1{
@@ -348,16 +296,16 @@ p{
  }
 
  .bleuciel{
-     
+
      height: 900px;
      width: 1475px;
      margin-left: 30%;
      margin-top: -410px;
-     background-image: url("images/R2.jpeg");
+     background-image: url("../images/R2.jpeg");
      background-repeat: no-repeat;
      background-color: rgb(122, 175, 224);
-     
-     
+
+
  }
 
  .bleusombre{
@@ -366,20 +314,20 @@ p{
      width: 1100px;
     margin-top: -600px;
     margin-left: 50px;
-    
-    
+
+
     background-position: 700px;
  }
 
 .nosservices{
     width: 100vw;
     height: 85vh;
-   
-    background-image: url("images/serviceimage.jpeg");
+
+    background-image: url("../images/serviceimage.jpeg");
     margin-top: 13%;
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 .service1{
@@ -434,7 +382,7 @@ p{
     background-color: rgba(5, 36, 64, 0.758);
     font-size: 65px;
     color: white;
-     
+
 }
 
 .titreequipe h1{
@@ -447,12 +395,12 @@ p{
 .sectionequipe{
     width: 100vw;
     height: 85vh;
-    margin-top: 0%; 
-    
+    margin-top: 0%;
+
     align-items: center;
     justify-content: center;
     overflow: hidden;
-   
+
 }
 .photodesassociés img{
     width: 350px;
@@ -470,5 +418,5 @@ p{
 .acceuil4{
     width: 100vw;
     height: 75vh;
-    
+
 } 
