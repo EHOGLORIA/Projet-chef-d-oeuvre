@@ -1,0 +1,37 @@
+
+.hero {
+  height: calc(100vh - 130px);
+  background-image: url("../images/W2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &-content {
+    opacity: 0.9;
+    background-color: rgb(28, 95, 163);
+    padding: 35px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px
+  }
+
+  &-btn {
+    margin-top: 15px;
+    padding: 12px 30px;
+    font-size: 20px;
+    background: white;
+    color: rgb(28, 95, 163);
+    &:hover {
+      opacity: 0.9;
+      background-color:rgb(28, 95, 163);
+      color:white;
+    }
+  }
+}
