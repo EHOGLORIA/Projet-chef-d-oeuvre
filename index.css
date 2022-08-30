@@ -5,7 +5,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
+    /* border:solid; */
 }
 body{
    height: 100vh;
@@ -320,9 +320,9 @@ button:hover {
     display: flex;
 }
 
-p{
+.footersection p{
     color: white;
-    margin-left: 50%;
+    text-align: center;
     font-size: 20px;
 }
  /* page 3 */
@@ -357,12 +357,20 @@ p{
     background-position: 700px;
  }
 
+ .decouverteservice{
+    width: 100vw;
+    height: 25vh;
+    color: rgba(5, 36, 64, 0.779);
+    font-size: 55px;
+    padding-left: 23%;
+    padding-top: 27px;
+ }
+
 .nosservices{
     width: 100vw;
     height: 85vh;
-   
     background-image: url("images/serviceimage.jpeg");
-    margin-top: 13%;
+    margin-top: -2%;
     display: flex;
     justify-content: space-between;
     
@@ -411,25 +419,18 @@ p{
     border-radius: 30px;
 
 }
-
-
-
 .titreequipe{
     width: 100vw;
     height: 25vh;
     background-color: rgba(5, 36, 64, 0.758);
     font-size: 65px;
-    color: white;
-     
+    color: white; 
 }
 
 .titreequipe h1{
    margin-left: 165px;
   margin-bottom: 30px;
 }
-
-
-
 .sectionequipe{
     width: 100vw;
     height: 85vh;
@@ -452,9 +453,109 @@ p{
 
 }
 
+.blog{
+    width: 100vw;
+    height: 35vh;
+    color: rgba(5, 36, 64, 0.779);
+    font-size: 65px; 
+    padding-left: 40%;
+    padding-top: 20px;
+}
+
+.sectionblog{
+    width: 100vw;
+    height: 75vh;
+    background-color: aqua;
+}
+
+
 
 .acceuil4{
     width: 100vw;
     height: 75vh;
+    background-color: aqua;
+    /* background-image: url("images/acceuil41.jpeg");
+    background-repeat: no-repeat; */
     
 } 
+
+.acceuil4image img{
+    width: 100vw;
+    height: 75vh;
+}
+
+.incitation4{
+    width: 100vw;
+    height: 20vh;
+    font-size: 75px;
+   text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+    color: rgba(5, 36, 64, 0.779);
+}
+
+.horairesouvertures{
+    width: 100vw;
+    height: 75vh;
+     /* background-image: url("images/HO.jpeg");  */
+    /* background-repeat: no-repeat; */
+    display: flex;
+}
+.horairesouvertures img{
+    width: 50vw;
+    height: 70vh;
+}
+.Texteouverture{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    height: 70vh; 
+    color: rgba(5, 36, 64, 0.779);
+    
+    font-size: 35px;
+    
+}
+
+.Texteouverture p{
+    color: rgba(5, 36, 64, 0.779);
+    font-size: 30px;
+    padding: 25% 10%;    
+}
+.localisation{
+    width: 100vw;
+    height: 70vh;
+    font-size: 75px;
+    font-weight: bold;
+    color: rgba(5, 36, 64, 0.779); text-align: center;
+    background-color: rgba(150, 204, 222, 0.175);
+}
+.maps iframe {
+    width: 70vw;
+    height: 50vh;
+    margin-top: 40px;
+}
+
+.securite{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+   
+}
+
+.securitesatisfation img{
+    width: 40vw;
+    height: 45vh;
+    margin-top: 100px;
+    margin-left: 25%;
+}
+
+.Textesecurite .paragraphesecurite{
+    width: 50vw;
+    height: 80vh;
+    font-size: 66px;
+    color: rgba(5, 36, 64, 0.779);
+    padding-left: 20%;
+    padding-top: 30%;
+}
+
