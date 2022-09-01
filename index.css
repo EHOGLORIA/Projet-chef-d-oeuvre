@@ -152,7 +152,9 @@ button:hover {
  }
 
  .aproposdenous{
-    width: 100vw;
+     max-width: 1250px;
+     margin: auto;
+    /* width: 100vw; */
      height: 85vh;
     /* background-color: rgb(184, 215, 215); */
     /* top: 80%; */
@@ -179,8 +181,8 @@ button:hover {
     width: 600px;
     
     /* background-color: aqua; */
-    margin-left: 70%;
-    margin-top: -35%;
+    margin-left: 65%;
+    margin-top: -55%;
     background-image: url("images/photo2sbg-removebg-preview\ copie.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -188,7 +190,7 @@ button:hover {
 .textapropos1{
     height: 300px;
     width: 600px;
-    margin-left: 50px;
+    margin-left: 80px;
     font-size: 25px;
     color: rgba(63, 94, 124, 0.885);
     
@@ -198,7 +200,7 @@ button:hover {
 .textapropos2{
     height: 300px;
     width: 600px;
-    margin-left: 50px;
+    margin-left: 80px;
     font-size: 25px;
     border: none;
     background-color: rgba(63, 94, 124, 0.885);
@@ -399,29 +401,25 @@ form button{
 background: white;
 color: rgba(5, 36, 64, 0.779);
 transform: scale(1.05);
-border-radius: 100px;
-transition: .5s transform linear, .3s height linear .3s;
+transition: all .5s linear;
 }
 .nosservices .service2:hover{
     background: rgb(239, 242, 243);
     color: rgba(5, 36, 64, 0.779);
     transform: scale(1.05);
-    border-radius: 100px;
-    transition: .5s transform linear, .3s height linear .3s;
+    transition: all .5s linear;
     }
     .nosservices .service3:hover{
         background: rgb(239, 242, 243);
         color: rgba(5, 36, 64, 0.779);
         transform: scale(1.05);
-        border-radius: 100px;
-        transition: .5s transform linear, .3s height linear .3s;
+        transition: all .5s linear;
         }
         .nosservices .service4:hover{
             background: rgb(239, 242, 243);
             color: rgba(5, 36, 64, 0.779);
             transform: scale(1.05);
-            border-radius: 100px;
-            transition: .5s transform linear, .3s height linear .3s;
+            transition: all .5s linear;
             }
 
 .service1{
@@ -512,7 +510,8 @@ transition: .5s transform linear, .3s height linear .3s;
        width: 400px;
        height: 600px;
        float: left;
-       box-shadow: 5px 5px 15px rgba(5, 36, 64, 0.758);
+       /* box-shadow: 5px 5px 15px rgba(5, 36, 64, 0.758); */
+       box-shadow: 17px 17px 40px rgba(5, 36, 64, 0.32);
        position: relative;
        /* display: block;  */
        overflow: hidden;
@@ -558,8 +557,8 @@ transition: .5s transform linear, .3s height linear .3s;
     top: 0;
     height: 4px;
     width: 100%;
-    border-top: 4px solid transparent;
-    border-right: 4px solid transparent;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
     box-sizing: border-box;
     transform: translateX(-100%);
 }
