@@ -25,7 +25,13 @@ header{
     align-items: center;
     padding: 30px 10px;
 }
-
+@media screen and (max-widh: 800px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        height: auto;
+    }
+}
 .logo{
     cursor: pointer;
     height: 70px;
@@ -79,6 +85,11 @@ button:hover {
      width: 100vw;
      height: 90vh;
  }
+ @media screen and (max-widh: 800px) {
+    .acceuilinfos .image {
+        height: 100px;
+    }
+}
 
 .textacceuil{
     top: -5%;
