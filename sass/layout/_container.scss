@@ -1,0 +1,12 @@
+
+.container{
+  max-width: 1110px;
+  padding: 0 39px;
+  @media (min-width: 1200px) {
+    margin: auto;
+    padding: 0px;
+  }
+  &-fluid{
+    width: 100%;
+  }
+}
