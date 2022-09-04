@@ -1,0 +1,19 @@
+$baseSpacing: 0.5rem;
+
+$deep-blue: #052642C6;
+$white: #FFF;
+$black: #000;
+$blue: #318CD2FF;
+
+/**
+array off colors
+'deep-blue': $deep-blue
+here 'deep-blue' is the colors name
+$deep-blue is the color value
+ */
+$color-map: (
+        'deep-blue': $deep-blue,
+        'white': $white,
+        'black': $black,
+        'blue': $blue
+)

@@ -1,9 +1,13 @@
+
+.title-2{
+
+}
 a{
   text-decoration: none;
   transition: all 0.3s ease 0s;
-  color: rgba(5, 36, 64, 0.779);
+  color: $deep-blue;
   &:hover {
-    color: rgb(49, 140, 210);
+    color: $blue;
     cursor: pointer;
   }
 }
@@ -14,5 +18,34 @@ a{
   }
   &-lg{
     font-size: 2.5rem;
+  }
+}
+
+.title{
+  &-1{
+    font-size: 70px;
+  }
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-deep-blue{
+  color: $deep-blue;
+}
+
+/**
+ parcourt la la liste des éléments de colors map
+ et pour chaque ligne,
+ - il enregistre le premier ellement dans $state
+ - et il enregistre le deuxième dans color
+ */
+
+.text{
+  @each $color-name, $color-value in $color-map{
+    &-#{$color-name} {
+      color: map-get($color-map, $color-name);
+    }
   }
 }

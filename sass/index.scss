@@ -1,3 +1,4 @@
+@import "utils/variables";
 @import "base/base";
 @import "base/display";
 @import "base/typography";
@@ -6,6 +7,7 @@
 @import "layout/navbar";
 @import "layout/btn";
 @import "layout/hero";
+@import "layout/callToAction";
 
 @import "pages/home";
 
@@ -15,7 +17,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  //border: red solid 1px;
 }
 
 
@@ -79,20 +80,11 @@
 }
 
 .titreapropos {
-  font-size: 70px;
   margin-left: 40%;
   color: rgba(5, 36, 64, 0.779);
   margin-top: 50px;
 }
 
-.texteapropos {
-  margin-top: 120px;
-}
-
-.textapropos12 {
-
-  margin-bottom: -14%;
-}
 
 .aproposimage {
   height: 800px;
@@ -106,32 +98,27 @@
   background-repeat: no-repeat;
 }
 
-.textapropos1 {
-  height: 300px;
-  width: 600px;
-  margin-left: 50px;
-  font-size: 25px;
-  color: rgba(63, 94, 124, 0.885);
-
-
+.about{
+  display: flex;
+  align-items: flex-end;
+  & > img{
+    object-fit: contain;
+    width: 100%;
+  }
+  &-content{
+    width: 600px;
+    font-size: 25px;
+    &-secondary{
+      background-color:  rgba(1, 50, 78, 0.833);
+      color: white;
+      border-radius: 20px;
+    }
+  }
 }
 
-.textapropos2 {
-  height: 300px;
-  width: 600px;
-  margin-left: 50px;
-  font-size: 25px;
-  border: none;
-  background-color: rgba(63, 94, 124, 0.885);
-  border-radius: 20px;
 
-
-}
-
-.calltoaction {
+.callToAction {
   width: 100vw;
-  height: 85vh;
-  background-color: rgba(1, 50, 78, 0.833);
   display: flex;
   justify-content: space-between;
   background-image: url("../images/page33.jpeg");
@@ -149,11 +136,6 @@
   margin-left: 35%;
   background-color: rgba(63, 94, 124, 0.885);
   border-radius: 15px;
-}
-
-.textinspiration {
-  /* width: 750px;
-  height: 1000px; */
   width: 750px;
   height: 400px;
   font-size: 50px;
