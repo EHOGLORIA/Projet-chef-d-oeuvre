@@ -14,6 +14,13 @@ body {
     &b-#{$i} {
       margin-bottom: $i*$baseSpacing;
     }
+    &l-#{$i} {
+      margin-left: $i*$baseSpacing;
+    }
+    
+    &r-#{$i} {
+      margin-right: $i*$baseSpacing;
+    }
   }
 }
 
@@ -21,6 +28,14 @@ body {
   @for $i from 0 through 8 {
     &-#{$i} {
       padding: $i*$baseSpacing;
+    }
+    
+    &r-#{$i} {
+      padding-right: $i*$baseSpacing;
+    }
+    
+    &l-#{$i} {
+      padding-left: $i*$baseSpacing;
     }
   }
 }
