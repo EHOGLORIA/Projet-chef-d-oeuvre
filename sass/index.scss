@@ -8,6 +8,7 @@
 @import "layout/btn";
 @import "layout/hero";
 @import "layout/callToAction";
+@import "layout/footer";
 
 @import "pages/home";
 
@@ -78,6 +79,7 @@
   /* top: 80%; */
   /* position: relative; */
 
+
 }
 
 .titreapropos {
@@ -102,6 +104,11 @@
 .about{
   display: flex;
   align-items: flex-end;
+  flex-direction: column;
+  @media (min-width: 1200px) {
+    flex-direction: row;
+  }
+
   & > img{
     object-fit: contain;
     width: 100%;
@@ -150,6 +157,7 @@
 }
 .valeur-content{
   display: flex;
+  gap: 50px;
 }
 
 
@@ -166,11 +174,10 @@
 
 
 .valeur-items {
-   margin-left: 170px;
+   
   height: 200px;
   width: 320px;
   display: flex;
-  
   margin-top: 15%;
   background-color: rgba(5, 36, 64, 0.758);
   font-size: 30px;
@@ -183,38 +190,31 @@
 
 
 
-.footer-section {
-  width: 100%;
-  background-color: rgba(5, 36, 64, 0.758);
-  margin-bottom: 70px;
-  display: flex;
-  flex-direction: column;
-}
 
-.rectangle1 {
-  width: 10%;
-  height: 65vh;
-  background-color: rgb(1, 32, 58);
-}
+// .rectangle1 {
+//   width: 10%;
+//   height: 65vh;
+//   background-color: rgb(1, 32, 58);
+// }
 
-.rectangle3 {
-  width: 100vw;
-  height: 15%;
-  background-color: rgb(1, 32, 58);
-}
+// .rectangle3 {
+//   width: 100vw;
+//   height: 15%;
+//   background-color: rgb(1, 32, 58);
+// }
 
-.textfooter {
-  margin-left: 18%;
-  color: white;
-  font-size: 25px;
-  margin-bottom: -15%;
-  display: flex;
-}
+// .textfooter {
+//   margin-left: 18%;
+//   color: white;
+//   font-size: 25px;
+//   margin-bottom: -15%;
+//   display: flex;
+// }
 
-.formulaire {
-  margin-left: 15%;
-  display: flex;
-}
+// .formulaire {
+//   margin-left: 15%;
+//   display: flex;
+// }
 
 /* page 3 */
 .bleufonce {
