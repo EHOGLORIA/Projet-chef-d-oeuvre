@@ -2,6 +2,9 @@ body {
   height: 100vh;
   width: 100%;
 }
+ul{
+  list-style: none;
+}
 
 .m {
   @for $i from 0 through 8 {

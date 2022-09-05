@@ -68,9 +68,7 @@
 
 }
 
-.deuxiemepage {
-
-}
+.deuxiemepage {}
 
 .aproposdenous {
   width: 100vw;
@@ -101,23 +99,26 @@
   background-repeat: no-repeat;
 }
 
-.about{
+.about {
   display: flex;
   align-items: flex-end;
   flex-direction: column;
+
   @media (min-width: 1200px) {
     flex-direction: row;
   }
 
-  & > img{
+  &>img {
     object-fit: contain;
     width: 100%;
   }
-  &-content{
+
+  &-content {
     width: 600px;
     font-size: 25px;
-    &-secondary{
-      background-color:  rgba(1, 50, 78, 0.833);
+
+    &-secondary {
+      background-color: rgba(1, 50, 78, 0.833);
       color: white;
       border-radius: 20px;
     }
@@ -139,8 +140,20 @@
   height: 500px;
 }
 
-.textinspiration {
+.securite {
+  width: 100%;
+}
 
+.Textesecurite {
+  width: 200px;
+}
+
+.Textesecurite img {
+  display: flex;
+  justify-content: center;
+}
+
+.textinspiration {
   margin-left: 35%;
   background-color: rgba(63, 94, 124, 0.885);
   border-radius: 15px;
@@ -153,28 +166,29 @@
 
 .valeur-section {
   width: 100%;
-  
+
 }
-.valeur-content{
+
+.valeur-content {
   display: flex;
   gap: 50px;
 }
 
 
 
- .valeur-image{
-//   width: 100%;
-//   height: 65vh;
-//   background-color: rgba(236, 238, 243, 0.361);
-//   background-image: url("../images/R5.png");
-//   background-repeat: no-repeat;
-//   display: flex;
+.valeur-image {
+  //   width: 100%;
+  //   height: 65vh;
+  //   background-color: rgba(236, 238, 243, 0.361);
+  //   background-image: url("../images/R5.png");
+  //   background-repeat: no-repeat;
+  //   display: flex;
 
- }
+}
 
 
 .valeur-items {
-   
+
   height: 200px;
   width: 320px;
   display: flex;
@@ -187,35 +201,6 @@
   justify-content: center;
 
 }
-
-
-
-
-// .rectangle1 {
-//   width: 10%;
-//   height: 65vh;
-//   background-color: rgb(1, 32, 58);
-// }
-
-// .rectangle3 {
-//   width: 100vw;
-//   height: 15%;
-//   background-color: rgb(1, 32, 58);
-// }
-
-// .textfooter {
-//   margin-left: 18%;
-//   color: white;
-//   font-size: 25px;
-//   margin-bottom: -15%;
-//   display: flex;
-// }
-
-// .formulaire {
-//   margin-left: 15%;
-//   display: flex;
-// }
-
 /* page 3 */
 .bleufonce {
   background-color: rgb(4, 62, 116);
@@ -226,27 +211,25 @@
 
 .bleuciel {
 
-  height: 900px;
-  width: 1475px;
-  margin-left: 30%;
-  margin-top: -410px;
+  height: calc(100vh - 130px);
+  width: 70%;
+  margin-left: auto;
   background-image: url("../images/R2.jpeg");
   background-repeat: no-repeat;
+  background-position: center;
   background-color: rgb(122, 175, 224);
-
-
 }
 
-.bleusombre {
-  background-color: rgba(116, 143, 170, 0.624);
-  height: 700px;
-  width: 1100px;
-  margin-top: -600px;
-  margin-left: 50px;
+// .bleusombre {
+//   background-color: rgba(116, 143, 170, 0.624);
+//   height: 700px;
+//   width: 1100px;
+//   margin-top: -600px;
+//   margin-left: 50px;
 
 
-  background-position: 700px;
-}
+//   background-position: 700px;
+// }
 
 .nosservices {
   width: 100vw;
