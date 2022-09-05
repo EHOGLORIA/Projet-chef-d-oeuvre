@@ -1,4 +1,3 @@
-
 .hero {
   height: calc(100vh - 130px);
   background-image: url("../images/W2.jpeg");
@@ -10,6 +9,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  &-v2 {
+    height: calc(75vh - 130px);
+    background-image: url("../images/W3.jpeg");
+  }
 
   &-content {
     opacity: 0.9;
@@ -28,10 +32,11 @@
     font-size: 20px;
     background: white;
     color: rgb(28, 95, 163);
+
     &:hover {
       opacity: 0.9;
-      background-color:rgb(28, 95, 163);
-      color:white;
+      background-color: rgb(28, 95, 163);
+      color: white;
     }
   }
 }

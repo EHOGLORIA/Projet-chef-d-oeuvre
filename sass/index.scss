@@ -144,21 +144,22 @@
 }
 
 .valeursection {
-  width: 100vw;
+  width: 100%;
   height: 85vh;
 
 
 }
 
 .valeurtitre {
-  font-size: 70px;
-  margin-left: 35%;
+  font-size: 50px;
+  
+  text-align: center;
   color: rgba(5, 36, 64, 0.779);
   margin-top: 50px;
 }
 
 .valeurimage {
-  width: 100vw;
+  width: 100%;
   height: 65vh;
   background-color: rgba(236, 238, 243, 0.361);
   background-image: url("../images/R5.png");
@@ -169,7 +170,7 @@
 
 
 .valeur1 {
-  margin-left: 900px;
+  // margin-left: 300px;
   height: 200px;
   width: 320px;
   margin-top: 15%;
@@ -181,7 +182,7 @@
 }
 
 .valeur2 {
-  margin-left: 600px;
+  // margin-left: 100px;
   margin-top: 15%;
   height: 200px;
   width: 370px;
