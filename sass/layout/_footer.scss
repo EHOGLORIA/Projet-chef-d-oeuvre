@@ -7,6 +7,32 @@
   // text-align: center;
 }
 
+
+.footersection p{
+  color: white;
+}
+
+form input{
+  width: 200px;
+  height: 45px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 20px;
+  margin: top 20px;
+  margin-bottom: 40px;
+  outline: none;
+  border: none;
+}
+form button{
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff ;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
 .footer-content {
   width: 90%;
   background-color: rgba(192, 216, 236, 0.758);
