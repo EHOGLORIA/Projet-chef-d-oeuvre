@@ -65,19 +65,11 @@
   position: relative;
   width: 800px;
   height: 200px;
-
 }
-
-.deuxiemepage {}
 
 .aproposdenous {
   width: 100vw;
   height: 85vh;
-  /* background-color: rgb(184, 215, 215); */
-  /* top: 80%; */
-  /* position: relative; */
-
-
 }
 
 .titreapropos {
@@ -90,8 +82,6 @@
 .aproposimage {
   height: 800px;
   width: 600px;
-
-  /* background-color: aqua; */
   margin-left: 70%;
   margin-top: -35%;
   background-image: url("images/photo2sbg-removebg-preview\ copie.png");
@@ -199,137 +189,216 @@
   align-items: center;
   justify-content: center;
 }
-.acceuil3 container-fluid{
+
+/* page 3 */
+
+.design-container-fluid {
   width: 100%;
 }
-/* page 3 */
-.bleufonce {
+
+.design-image {
+  width: 70%;
+  margin-left: auto;
+}
+
+.design-image img {
+  width: 100%;
+}
+
+.design-content {
+  position: relative;
+  margin-bottom: 10%;
+}
+
+.design-deep-blue {
   background-color: rgb(4, 62, 116);
   height: 400px;
   width: 100px;
-  margin-left: 100px;
+  top: 0px;
+  left: 10%;
+  position: absolute;
 }
 
-.bleuciel {
+.design-white-blue {
+  top: 55%;
+  left: 5%;
+  background-color: rgba(116, 143, 170, 0.624);
+  height: 60%;
+  width: 75%;
+  position: absolute;
 
-  height: calc(100vh - 130px);
-  width: 70%;
-  margin-left: auto;
-  background-image: url("../images/R2.jpeg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: rgb(122, 175, 224);
 }
 
-// .bleusombre {
-//   background-color: rgba(116, 143, 170, 0.624);
-//   height: 700px;
-//   width: 1100px;
-//   margin-top: -600px;
-//   margin-left: 50px;
-
-
-//   background-position: 700px;
-// }
-
-.nosservices {
-  width: 100vw;
-  height: 85vh;
-
+.service-section {
+  width: 100%;
+  // height: 85vh;
   background-image: url("../images/serviceimage.jpeg");
-  margin-top: 13%;
+  background-position: center;
+  // margin-top: 13%;
   display: flex;
-  justify-content: space-between;
+  row-gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 200px;
+  padding-bottom: 200px;
 
 }
 
-.service1 {
-  width: 400px;
-  height: 310px;
+.service {
+  width: 300px;
+  height: 200px;
+  padding: 10px;
   background-color: rgba(56, 104, 149, 0.331);
   color: white;
-  margin-top: 15%;
-  font-size: 40px;
-  margin-left: 5%;
+  font-size: 30px;
   border-radius: 10px;
+  padding: auto;
+  align-items: center;
+  display: flex;
+  text-align: center;
 
 }
 
-.service2 {
-  width: 400px;
-  height: 310px;
-  background-color: rgba(56, 104, 149, 0.331);
-  color: white;
-  margin-top: 15%;
-  font-size: 40px;
+.service:hover {
+  background: white;
+  color: rgba(5, 36, 64, 0.779);
+  transform: scale(1.05);
   border-radius: 10px;
+  transition: .5s transform linear, .3s height linear .3s;
 }
 
-.service3 {
-  width: 400px;
-  height: 310px;
-  background-color: rgba(56, 104, 149, 0.331);
-  color: white;
-  margin-top: 15%;
-  font-size: 40px;
-  border-radius: 10px;
-}
+// section equipe style
 
-.service4 {
-  width: 400px;
-  height: 310px;
-  background-color: rgba(56, 104, 149, 0.331);
-  color: white;
-  margin-top: 15%;
-  font-size: 40px;
-  margin-right: 10%;
-  border-radius: 30px;
-
-}
-
-
-.titreequipe {
-  width: 100vw;
-  height: 25vh;
-  background-color: rgba(5, 36, 64, 0.758);
-  font-size: 65px;
-  color: white;
-
-}
-
-.titreequipe h1 {
-  margin-left: 165px;
-  margin-bottom: 30px;
-}
-
-
-.sectionequipe {
-  width: 100vw;
-  height: 85vh;
-  margin-top: 0%;
-
+.section-equipe {
+  width: 100%;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-
 }
 
-.photodesassociés img {
-  width: 350px;
-  height: 400px;
-  margin-left: 50%;
-  margin-top: 20%;
+.equipe-title {
+  width: 100%;
+  background-color: rgba(5, 36, 64, 0.758);
+  font-size: 55px;
+  color: white;
+  align-items: center;
+  padding-bottom: -5%;
+ 
 }
-
-.photodesassociés {
+.photo-associe img {
+  width: 300px;
+  height: 350px;
+  // margin-left: 50%;
+  margin-top: 10%;
+  border-radius: 10px 10px 20px 120px;
+}
+.photo-associe {
   display: flex;
   justify-content: space-between;
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+.membres-equipe {
+  width: 370px;
+  height: 500px;
+  float: left;
+  box-shadow: 5px 5px 15px rgba(5, 36, 64, 0.758);
+  position: relative;
+  /* display: block;  */
+  overflow: hidden;
+  padding-left: 15px;
+  text-align: center;
+  background: #edf1f3;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+.membres-equipe p {
+  color: rgba(5, 36, 64, 0.779);
+  margin-top: 15px;
+}
+
+.membres-equipe h3 {
+  color: rgba(5, 36, 64, 0.779);
+  margin-top: 10px;
+}
+
+.membres-equipe::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(100%);
+}
+
+.membres-equipe::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  height: 4px;
+  width: 100%;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(-100%);
+}
+
+.membres-equipe:hover::before {
+  border-color: rgba(5, 36, 64, 0.779);
+  height: 100%;
+  transform: translateX(0);
+  transition: .3s transform linear, .3s height linear .3s;
 
 }
 
+.membres-equipe:hover::after {
+  border-color: rgba(17, 163, 216, 0.779);
+  height: 100%;
+  transform: translateX(0);
+  transition: .3s transform linear, .3s height linear .5s;
 
-.acceuil4 {
-  width: 100vw;
-  height: 75vh;
+}
 
+// design equipe fin
+// page4 style début
+.acceuil-last {
+  width: 100%;
+}
+.acceuil-last img{
+  width: 100%;
+  height: 75%;
+ 
+ }
+
+.horaires-content{
+  width: 100%;
+  display: flex;
+  padding-top: 3%;
+}
+.horaires-image img{
+  width: 70%;
+}
+.horaires-texte{
+  width: 50%;
+  font-size: 25px;
+  text-align: center;
+  align-items: center;
+}
+.localisation-section{
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 5%;
+  background-color: rgba(236, 240, 243, 0.466);
+}
+.maps-item iframe{
+  width: 90%;
+  padding-top: 5%;
+  padding-left: 10%;
 }
