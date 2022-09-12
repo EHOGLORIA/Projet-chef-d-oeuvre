@@ -41,7 +41,7 @@
         </div>
     </section>
     <section class="service-section ">
-        <div class="service">  COURTAGE D'AFFAIRE
+        <div class="service"> COURTAGE D'AFFAIRE
             <!-- <p>
                 <ul>
                     <li>Gestion des biens mobiliers</li>
@@ -52,7 +52,7 @@
                 </ul> -->
             <!-- </p> -->
         </div>
-        <div class="service">  ASSISTANCE JURIDIQUE</div>
+        <div class="service"> ASSISTANCE JURIDIQUE</div>
         <div class="service"> DEMARCHES ADMINISTRATIVES</div>
         <div class="service">GESTION MOBILIERE ET IMMOBILIERE</div>
         <!-- <p>
@@ -98,6 +98,50 @@
         </div>
     </section>
 
+
+
+
+    <!-- section nos offres -->
+    <section class="vosRequettes">
+        <div class="container">
+            <div class="title">
+                <h1>VOS REQUETTES</h1>
+            </div>
+            <div class="text_input"> Entrez vos requettes ici...</div>
+            <div class="user_text">
+                <input id="Input" type="text" placeholder="Votre requette" size="70">
+                <button id="btn" onclick="insertion()">
+                    <i class="fa-solid fa-pencil"></i>
+                </button>
+            </div>
+
+            <div class="list_box">
+                <div class="text_list">
+                    <h4> liste de vos requettes</h4>
+                </div>
+                <div class="lesRequettes">
+                    <ul id="requetteList">
+                    </ul>
+                </div>
+            </div>
+            <script src="todo.js"></script>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <section class="footer-section text-deep-blue">
         <div class="footer-content p-8 pt-4">
             <div class="colonne">
@@ -113,12 +157,15 @@
             </div>
             <div class="colonne">
                 <h3>NEWSLETTER</h3>
-                <form action="" class="pt-4">
-                    <input type="email" placeholder="Votre E-mail" required>
+                <form action="" class="pt-4" method="post">
+                    <input type="email" placeholder="Votre E-mail" required name="message">
+                    <input type="text" placeholder="Votre message" required name="message">
                     <br>
-                    <button type="submit">Soumettez</button>
+                    <button type="submit" name="button">Soumettez</button>
                 </form>
             </div>
+
+
             <div class="colonne">
                 <h3>CONTACT</h3>
                 <p class="pt-4"> Lome-adidogome <br>500m de la maison des jeunes <br>

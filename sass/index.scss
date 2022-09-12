@@ -29,7 +29,10 @@
   margin-right: auto;
 }
 
-
+.presentation{
+  display: flex;
+  gap: 15px;
+}
 /* page 2 */
 
 .deuxiemepage .image2 {
@@ -76,8 +79,13 @@
   margin-left: 40%;
   color: rgba(5, 36, 64, 0.779);
   margin-top: 50px;
+  
 }
-
+@media screen and (max-width:1200px) {
+  .title-1{
+    font-size: 25px;
+  }
+}
 
 .aproposimage {
   height: 800px;
@@ -115,6 +123,12 @@
   }
 }
 
+@media screen and (max-width:1200px) {
+  .hero {
+    font-size: 15px;
+    
+  }
+}
 
 .callToAction {
   width: 100vw;
@@ -122,6 +136,12 @@
   justify-content: space-between;
   background-image: url("../images/page33.jpeg");
 }
+@media screen and (max-width:1200px) {
+  .callToAction-content {
+    font-size: 15px;
+  }
+}
+
 
 .texteapropos .image1 img {
   margin-left: 90%;
@@ -154,28 +174,40 @@
   margin-top: 15%;
 }
 
+
 .valeur-section {
   width: 100%;
-
 }
 
 .valeur-content {
   display: flex;
-  gap: 50px;
+  gap: 20%;
+  padding-bottom: 10%;
+}
+@media screen and (max-width:1200px) {
+  .valeur-content{
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 
-
-.valeur-image {
-  //   width: 100%;
-  //   height: 65vh;
-  //   background-color: rgba(236, 238, 243, 0.361);
-  //   background-image: url("../images/R5.png");
-  //   background-repeat: no-repeat;
-  //   display: flex;
-
+@media screen and (max-width:1200px) {
+  .container{
+    
+  }
 }
 
+
+@media screen and (max-width:1200px) {
+  .valeur-image{
+    width: 250px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 .valeur-items {
   height: 200px;
@@ -188,6 +220,15 @@
   border-radius: 10px;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width:1200px) {
+  .valeur-items {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  width: 120px;
+  }
 }
 
 /* page 3 */
@@ -218,6 +259,12 @@
   left: 10%;
   position: absolute;
 }
+@media screen and (max-width:1200px) {
+  .design-deep-blue {
+  height: 100px;
+  width: 50px;
+  }
+}
 
 .design-white-blue {
   top: 55%;
@@ -242,8 +289,17 @@
   flex-wrap: wrap;
   padding-top: 200px;
   padding-bottom: 200px;
-
 }
+@media screen and (max-width:1200px) {
+  .service-section {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  height: 200px;
+  width: 300px;
+  }
+}
+
 
 .service {
   width: 300px;
@@ -257,8 +313,20 @@
   align-items: center;
   display: flex;
   text-align: center;
-
 }
+@media screen and (max-width:1200px) {
+  .service {
+    height: 300px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  height: 100px;
+  width: 120px;
+  }
+}
+
 
 .service:hover {
   background: white;
@@ -284,8 +352,19 @@
   color: white;
   align-items: center;
   padding-bottom: -5%;
- 
 }
+
+@media screen and (max-width:1200px) {
+  .equipe-title{
+    width: 310px;
+    height: 300px;
+    font-size: 31px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .photo-associe img {
   width: 300px;
   height: 350px;
@@ -295,9 +374,11 @@
 }
 .photo-associe {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 15px;
   padding-top: 3%;
   padding-bottom: 5%;
+  
 }
 .membres-equipe {
   width: 370px;
@@ -313,6 +394,18 @@
   margin-top: 30px;
   justify-content: space-between;
 }
+@media screen and (max-width:1200px) {
+  .membres-equipe{
+    width: 310px;
+    height: 250px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 
 .membres-equipe p {
   color: rgba(5, 36, 64, 0.779);
@@ -365,6 +458,159 @@
   transition: .3s transform linear, .3s height linear .5s;
 
 }
+// Style d'envoie des requettes début
+.vosRequettes {
+  max-width: 800px;
+  width: 95%;
+  height: fit-content;
+  background-color: rgba(5, 36, 64, 0.758);
+  border-radius: 10px;
+  margin: 30px auto;
+  padding-bottom: 30px;
+}
+
+.title {
+  padding: 20px 0;
+  font-size: 20px;
+  line-height: 48px;
+  text-align: center;
+  color: white;
+}
+
+.text_input {
+  width: 100%;
+  max-width: 700px;
+  padding-left: 10%;
+  color: white;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.user_text {
+  width: 90%;
+  height: 50px;
+  margin: 10px auto;
+  background-color: #fafafa;
+  border-radius: 7px;
+}
+.lesRequettes{
+  width: 90%;
+  height: 200px;
+  margin: 10px auto;
+  background-color: #fafafa;
+  border-radius: 7px;
+}
+
+input {
+  width: 85%;
+  height: 100%;
+  font-size: 20px;
+  line-height: 29px;
+  border: 0;
+  border-radius: 7px 0px 0px 7px;
+  outline: none;
+  padding-left: 10px;
+}
+
+#btn {
+  background-color: rgba(186, 204, 220, 0.758);
+  width: 15%;
+  height: 100%;
+  font-size: calc(10px + 1vw + 1vh);
+  float: right;
+  text-align: start;
+  border: 0;
+  text-align: center;
+  border-radius: 0px 7px 7px 0px;
+  cursor: pointer;
+}
+
+.text_list {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.list_box {
+  width: 100%;
+}
+
+.list_box ul {
+  width: 90%;
+  height: 100%;
+  list-style: none;
+  margin: 0 auto;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
+
+.delet1 {
+  height: fit-content;
+  margin: 10px;
+  padding: 10px 5px;
+  background-color: #4a5880;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+
+.delet2 {
+  color: #4174da;
+  background-color: #372f4a;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+
+.fa-check {
+  opacity: 0;
+  margin-left: 10px;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+
+.done {
+  opacity: 1;
+  transition: .3s;
+  color: white;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+
+.text {
+  margin-left: 10%;
+}
+
+.delet1 .dBtn {
+  float: right;
+  border: none;
+  margin-right: 3%;
+  font-size: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+// Style d'envoie des requettes fin
+
 
 // design equipe fin
 // page4 style début
@@ -374,13 +620,33 @@
 .acceuil-last img{
   width: 100%;
   height: 75%;
- 
  }
+
+ @media screen and (max-width:1200px) {
+  .acceuil-last img {
+  height: 200px;
+  width: 300px;
+  }
+}
 
 .horaires-content{
   width: 100%;
   display: flex;
   padding-top: 3%;
+  text-align: center;
+  align-items: center;
+}
+@media screen and (max-width:1200px) {
+  .horaires-texte{
+ width: 300px;
+ 
+& p{
+  font-size: 10px;
+}
+& h2{
+  font-size: 10px;
+}
+  }
 }
 .horaires-image img{
   width: 70%;
@@ -388,8 +654,7 @@
 .horaires-texte{
   width: 50%;
   font-size: 25px;
-  text-align: center;
-  align-items: center;
+  
 }
 .localisation-section{
   width: 100%;
@@ -397,8 +662,22 @@
   padding-bottom: 5%;
   background-color: rgba(236, 240, 243, 0.466);
 }
+
+@media screen and (max-width:1200px) {
+  .localisation-section{
+  width: 300px;
+  }
+}
+
+
 .maps-item iframe{
   width: 90%;
   padding-top: 5%;
   padding-left: 10%;
+}
+@media screen and (max-width:1200px) {
+  .maps-item iframe{
+  width: 300px;
+  height: 300px;
+  }
 }
