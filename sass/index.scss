@@ -516,7 +516,8 @@ input {
   background-color: rgba(186, 204, 220, 0.758);
   width: 15%;
   height: 100%;
-  font-size: calc(10px + 1vw + 1vh);
+  font-size: 15px;
+  
   float: right;
   text-align: start;
   border: 0;
@@ -531,6 +532,8 @@ input {
   text-align: center;
   margin-top: 20px;
   font-size: 20px;
+  color: white;
+  text-decoration: underline;
 }
 
 .list_box {

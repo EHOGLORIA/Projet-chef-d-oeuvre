@@ -111,7 +111,7 @@
             <div class="user_text">
                 <input id="Input" type="text" placeholder="Votre requette" size="70">
                 <button id="btn" onclick="insertion()">
-                    <i class="fa-solid fa-pencil"></i>
+                  Envoyez  <i class="fa-solid fa-pencil"></i>
                 </button>
             </div>
 
@@ -157,11 +157,11 @@
             </div>
             <div class="colonne">
                 <h3>NEWSLETTER</h3>
-                <form action="" class="pt-4" method="post">
-                    <input type="email" placeholder="Votre E-mail" required name="message">
-                    <input type="text" placeholder="Votre message" required name="message">
+                <form action="newsletter.php" method="post" class="pt-4">
+                    <input type="email" name="email" placeholder="Votre E-mail" required>
+                    <input type="text" name="message" placeholder="Votre message" required name="message">
                     <br>
-                    <button type="submit" name="button">Soumettez</button>
+                    <button type="submit" name="submit">Soumettez</button>
                 </form>
             </div>
 

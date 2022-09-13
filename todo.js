@@ -11,4 +11,7 @@ function inputLength() {
 function insertion(){
     li = `<li> ${ input.value }</li>`
     ul.innerHTML += li
+    input.value = ""
 }
+
+

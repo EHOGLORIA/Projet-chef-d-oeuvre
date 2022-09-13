@@ -65,10 +65,11 @@
         </div>
         <div class="colonne">
             <h3>NEWSLETTER</h3>
-            <form action="" class="pt-4">
-                <input type="email" placeholder="Votre E-mail" required>
+            <form action="newsletter.php" method="post" class="pt-4">
+                <input type="email" name="email" placeholder="Votre E-mail" required>
+                <input type="text" name="message" placeholder="Votre message" required name="message">
                 <br>
-                <button type="submit">Soumettez</button>
+                <button type="submit" name="submit">Soumettez</button>
             </form>
         </div>
         <div class="colonne">
