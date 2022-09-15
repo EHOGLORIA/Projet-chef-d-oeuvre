@@ -3,10 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+
   "scripts": {
     "dev": "vite --open",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "sass": "sass ./sass/index.scss:./public/css/style.css -w --style compressed"
   },
   "devDependencies": {
     "sass": "^1.54.0",
