@@ -30,7 +30,13 @@
 
 .presentation{
   display: flex;
+  flex-direction: column;
   gap: 15px;
+}
+.presentation {
+  @media (min-width: 1200px) {
+    flex-direction: row;
+  }
 }
 /* page 2 */
 
@@ -95,6 +101,9 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+
+
 
 .about {
   display: flex;
@@ -420,10 +429,14 @@
 }
 .photo-associe {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 15px;
   padding-top: 3%;
   padding-bottom: 5%;
+  @media screen and (min-width:1200px) {
+    flex-direction: row;
+  }
   
 }
 .membres-equipe {
@@ -442,16 +455,16 @@
 }
 @media screen and (max-width:1200px) {
   .membres-equipe{
-    width: 310px;
-    height: 250px;
+    width: 360px;
+    height: 450px;
     font-size: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    justify-content: center;
   }
 }
-
 
 .membres-equipe p {
   color: rgba(5, 36, 64, 0.779);
