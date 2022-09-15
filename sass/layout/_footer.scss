@@ -1,32 +1,24 @@
 .footer-section {
   width: 100%;
   background-color: rgba(5, 36, 64, 0.758);
-  margin-bottom: 70px;
   display: flex;
   flex-direction: column;
-  // text-align: center;
 }
 
-
-.footersection p{
-  color: white;
-}
 
 form input{
-  width: 200px;
+  width: 100%;
   height: 45px;
   border-radius: 4px;
   text-align: center;
   font-size: 20px;
-  margin: top 20px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   outline: none;
   border: none;
 }
 form button{
   background: transparent;
   border: 2px solid #fff;
-  color: #fff ;
   border-radius: 30px;
   padding: 10px 30px;
   font-size: 15px;
@@ -37,28 +29,23 @@ form button{
   width: 90%;
   background-color: rgba(192, 216, 236, 0.758);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   max-width: 2000px;
-  margin-right: 39px;
-  @media (min-width: 1200px) {
+  @media (min-width: 750px) {
+    flex-direction: row;
     margin-right: auto;
     display: flex;
     justify-content: space-between;
   }
 }
 
-.colonne {
-  color: white;
-}
-
 .footer-copyright {
   text-align: center;
-  color: white;
 }
 
 .footer-link a{
-  color: white;
+  color: rgb(0, 0, 0);
   &:hover{
     color: rgb(0, 0, 0);
   }
