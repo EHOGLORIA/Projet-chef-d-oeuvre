@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>page3</title>
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <header class="container navbar">
+        <i class="fa-solid fa-bars"></i>
         <img class="logo" src="images/logo.png" alt="logo">
         <nav>
             <ul>
@@ -124,50 +127,34 @@
                     </ul>
                 </div>
             </div>
+        </div>
             <script src="todo.js"></script>
 
 
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <section class="footer-section text-deep-blue">
+    <section class="footer-section text-black">
         <div class="footer-content p-8 pt-4">
-            <div class="colonne">
-                <h3>LIENS USUELS</h3>
-
+            <div class="colonne p-3 pb-8">
+                <h3 class="title-3">LIENS USUELS</h3>
                 <ul class="pt-4 footer-link">
                     <li><a href="#">Acceuil</a></li>
                     <li><a href="#">A propos de nous</a></li>
                     <li><a href="#">Nos services</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-
             </div>
-            <div class="colonne">
-                <h3>NEWSLETTER</h3>
+            <div class="colonne p-3 pb-8">
+                <h3 class="title-3">NEWSLETTER</h3>
                 <form action="newsletter.php" method="post" class="pt-4">
-                    <input type="email" name="email" placeholder="Votre E-mail" required>
-                    <input type="text" name="message" placeholder="Votre message" required name="message">
+                    <input type="text" name="message" placeholder="Prénoms" required >
+                    <input type="email" name="email" placeholder="E-mail" required>
                     <br>
                     <button type="submit" name="submit">Soumettez</button>
                 </form>
             </div>
-
-
-            <div class="colonne">
-                <h3>CONTACT</h3>
+            <div class="colonne p-3 pb-8">
+                <h3 class="title-3">CONTACT</h3>
                 <p class="pt-4"> Lome-adidogome <br>500m de la maison des jeunes <br>
                 </p> <br>
                 <!-- <div reseausocial>
@@ -181,6 +168,7 @@
             <p>copyright2022bygloria</p>
         </div>
     </section>
+    
     <script type="module" src="/main.js"></script>
 </body>
 

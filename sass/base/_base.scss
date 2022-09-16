@@ -1,5 +1,5 @@
 body {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 }
 ul{
@@ -20,9 +20,51 @@ ul{
     &l-#{$i} {
       margin-left: $i*$baseSpacing;
     }
-    
     &r-#{$i} {
       margin-right: $i*$baseSpacing;
+    }
+    &x-#{$i} {
+      margin-left: $i*$baseSpacing;
+      margin-right: $i*$baseSpacing;
+    }
+    &y-#{$i} {
+      margin-top: $i*$baseSpacing;
+      margin-bottom: $i*$baseSpacing;
+    }
+  }
+}
+
+
+.m {
+  @each $width-name, $width-value in $width-map {
+    &-#{$width-name} {
+      @for $i from 0 through 8 {
+        @media (min-width: map-get($width-map, $width-name)) {
+          &-#{$i} {
+            margin: $i*$baseSpacing;
+          }
+          &t-#{$i} {
+            margin-top: $i*$baseSpacing;
+          }
+          &b-#{$i} {
+            margin-bottom: $i*$baseSpacing;
+          }
+          &l-#{$i} {
+            margin-left: $i*$baseSpacing;
+          }
+          &r-#{$i} {
+            margin-right: $i*$baseSpacing;
+          }
+          &x-#{$i} {
+            margin-left: $i*$baseSpacing;
+            margin-right: $i*$baseSpacing;
+          }
+          &y-#{$i} {
+            margin-top: $i*$baseSpacing;
+            margin-bottom: $i*$baseSpacing;
+          }
+        }
+      }
     }
   }
 }
@@ -32,26 +74,59 @@ ul{
     &-#{$i} {
       padding: $i*$baseSpacing;
     }
-    
-    &r-#{$i} {
-      padding-right: $i*$baseSpacing;
+    &t-#{$i} {
+      padding-top: $i*$baseSpacing;
     }
-    
+    &b-#{$i} {
+      padding-bottom: $i*$baseSpacing;
+    }
     &l-#{$i} {
       padding-left: $i*$baseSpacing;
     }
-    &t-#{$i} {
-      padding-top: $i*$baseSpacing;
+    &r-#{$i} {
+      padding-right: $i*$baseSpacing;
     }
-    &b-#{$i} {
+    &x-#{$i} {
+      padding-left: $i*$baseSpacing;
+      padding-right: $i*$baseSpacing;
+    }
+    &y-#{$i} {
+      padding-top: $i*$baseSpacing;
       padding-bottom: $i*$baseSpacing;
     }
+  }
+}
 
-    &t-#{$i} {
-      padding-top: $i*$baseSpacing;
-    }
-    &b-#{$i} {
-      padding-bottom: $i*$baseSpacing;
+.p {
+  @each $width-name, $width-value in $width-map {
+    &-#{$width-name} {
+      @for $i from 0 through 8 {
+        @media (min-width: map-get($width-map, $width-name)) {
+          &-#{$i} {
+            padding: $i*$baseSpacing;
+          }
+          &t-#{$i} {
+            padding-top: $i*$baseSpacing;
+          }
+          &b-#{$i} {
+            padding-bottom: $i*$baseSpacing;
+          }
+          &l-#{$i} {
+            padding-left: $i*$baseSpacing;
+          }
+          &r-#{$i} {
+            padding-right: $i*$baseSpacing;
+          }
+          &x-#{$i} {
+            padding-left: $i*$baseSpacing;
+            padding-right: $i*$baseSpacing;
+          }
+          &y-#{$i} {
+            padding-top: $i*$baseSpacing;
+            padding-bottom: $i*$baseSpacing;
+          }
+        }
+      }
     }
   }
 }
@@ -62,8 +137,8 @@ ul{
   }
 }
 
-.background-img{
-  &-v1{
+.background-img {
+  &-v1 {
     background-image: url("../images/page33.jpeg");
   }
 }

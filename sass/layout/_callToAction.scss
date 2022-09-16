@@ -4,10 +4,10 @@
     display: flex;
     min-width: 25%;
     max-width: 1110px;
-    margin: 50px auto;
     background: $deep-blue;
-    padding: 100px;
     border-radius: 15px;
-    font-size: 50px;
+    @media (min-width: 1200px) {
+      padding: 100px;
+    }
   }
 }
