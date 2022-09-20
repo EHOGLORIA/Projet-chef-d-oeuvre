@@ -272,153 +272,110 @@
 
 }
 
-.service-section {
-  width: 100%;
-  // height: 85vh;
-  background-image: url("../images/serviceimage.jpeg");
-  background-position: center;
-  // margin-top: 13%;
-  display: flex;
-  row-gap: 20px;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
-@media screen and (max-width: 1200px) {
-  .service-section {
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-    height: 200px;
-    width: 300px;
-  }
-}
-
-
 .service {
-  width: 300px;
-  height: 200px;
-  padding: 10px;
-  background-color: rgba(56, 104, 149, 0.331);
-  color: white;
-  font-size: 30px;
-  border-radius: 10px;
-  padding: auto;
-  align-items: center;
-  display: flex;
-  text-align: center;
-}
+  &-section {
+    width: 100%;
+    background-image: url("../images/serviceimage.jpeg");
+    background-position: center;
 
-@media screen and (max-width: 1200px) {
-  .service {
-    height: 300px;
-    font-size: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 100px;
-    width: 120px;
-  }
-}
-
-
-.service:hover {
-  background: white;
-  color: rgba(5, 36, 64, 0.779);
-  transform: scale(1.05);
-  border-radius: 10px;
-  transition: .5s transform linear, .3s height linear .3s;
-}
-
-// section equipe style
-
-.section-equipe {
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.equipe-title {
-  width: 100%;
-  background-color: rgba(5, 36, 64, 0.758);
-  font-size: 55px;
-  color: white;
-  align-items: center;
-  padding-bottom: -5%;
-}
-
-@media screen and (max-width: 1200px) {
-  .equipe-title {
-    width: 310px;
-    height: 300px;
-    font-size: 31px;
-    display: block;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-.photo-associe img {
-  width: 300px;
-  height: 350px;
-  // margin-left: 50%;
-  margin-top: 10%;
-  border-radius: 10px 10px 20px 120px;
-}
-
-.photo-associe {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  padding-top: 3%;
-  padding-bottom: 5%;
-
-}
-
-.membres-equipe {
-  width: 370px;
-  height: 500px;
-  float: left;
-  box-shadow: 5px 5px 15px rgba(5, 36, 64, 0.758);
-  position: relative;
-  /* display: block;  */
-  overflow: hidden;
-  padding-left: 15px;
-  text-align: center;
-  background: #edf1f3;
-  margin-top: 30px;
-  justify-content: space-between;
-}
-
-@media screen and (max-width: 1200px) {
-  .membres-equipe {
-    width: 310px;
-    height: 250px;
-    font-size: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    gap: 10px;
     align-items: center;
+    flex-wrap: wrap;
+
+    @media (min-width: 1200px) {
+      flex-direction: row;
+    }
+  }
+
+  &-items {
+    width: 300px;
+    height: 200px;
+    background-color: rgba(56, 104, 149, 0.331);
+    color: white;
+    font-size: 30px;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    text-align: center;
+
+    &:hover {
+      background: white;
+      color: rgba(5, 36, 64, 0.779);
+      transform: scale(1.05);
+      border-radius: 10px;
+      transition: .5s transform linear, .3s height linear .3s;
+    }
   }
 }
 
+.team {
+  &-section {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
 
-.membres-equipe p {
-  color: rgba(5, 36, 64, 0.779);
-  margin-top: 15px;
+  &-title {
+    width: 100%;
+    background-color: rgba(5, 36, 64, 0.758);
+    color: white;
+    align-items: center;
+    font-size: 31px;
+    @media (min-width: 1200px) {
+      font-size: 55px;
+    }
+  }
+
+  &-member {
+    &-section {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 15px;
+      @media (min-width: 768px) {
+        flex-direction: row;
+      }
+    }
+
+    &-item {
+      width: 100%;
+      font-size: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      float: left;
+      box-shadow: 5px 5px 15px rgba(5, 36, 64, 0.758);
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      background: #edf1f3;
+      @media screen and (min-width: 1200px) {
+        width: 370px;
+        height: 500px;
+        justify-content: space-between;
+      }
+      & img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        object-position: center top;
+        border-radius: 10px 10px 20px 120px;
+        @media screen and (min-width: 1200px) {
+          width: 300px;
+          height: 350px;
+        }
+      }
+    }
+  }
 }
 
-.membres-equipe h3 {
-  color: rgba(5, 36, 64, 0.779);
-  margin-top: 10px;
-}
-
-.membres-equipe::before {
+.team-member-item::before {
   position: absolute;
   content: '';
   left: 0;
@@ -431,7 +388,7 @@
   transform: translateX(100%);
 }
 
-.membres-equipe::after {
+.team-member-item::after {
   position: absolute;
   content: '';
   left: 0;
@@ -444,7 +401,7 @@
   transform: translateX(-100%);
 }
 
-.membres-equipe:hover::before {
+.team-member-item:hover::before {
   border-color: rgba(5, 36, 64, 0.779);
   height: 100%;
   transform: translateX(0);
@@ -452,12 +409,11 @@
 
 }
 
-.membres-equipe:hover::after {
+.team-member-item:hover::after {
   border-color: rgba(17, 163, 216, 0.779);
   height: 100%;
   transform: translateX(0);
   transition: .3s transform linear, .3s height linear .5s;
-
 }
 
 // Style d'envoie des requettes début
