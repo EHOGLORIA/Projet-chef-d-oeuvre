@@ -1,4 +1,8 @@
 .callToAction {
+  display: flex;
+  justify-content: center;
+  background-image: url("../images/page33.jpeg");
+  width: 100vw;
   &-content {
     text-align: center;
     display: flex;
@@ -11,3 +15,4 @@
     }
   }
 }
+

@@ -10,18 +10,20 @@
 
 <body>
 <header class="container navbar">
-    <i class="fa-solid fa-bars"></i>
     <img class="logo" src="images/logo.png" alt="logo">
-    <nav>
-        <ul>
-            <li><a href="index.html">Acceuil</a></li>
-            <li><a href="index2.html">A propos de nous</a></li>
-            <li><a href="index3.html">Nos services</a></li>
-        </ul>
-    </nav>
-    <a class="btn" href="index4.html">
-        Contact
-    </a>
+    <div class="navbar-links">
+        <nav>
+            <ul>
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="index2.html">A propos de nous</a></li>
+                <li><a href="index3.html">Nos services</a></li>
+            </ul>
+        </nav>
+        <a class="btn" href="index4.html">
+            Contact
+        </a>
+    </div>
+    <a><i class="fa-solid fa-bars navbar-icone" id="navbar-icone" onclick="document.getElementById('navbar-icone').classList.add('active')"></i></a>
 </header>
 
 <div class="container-fluid hero">
