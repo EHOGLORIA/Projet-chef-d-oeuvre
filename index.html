@@ -4,12 +4,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.1/css/bootstrap-grid.min.css" integrity="sha512-95rjxgceX8l8NTRpxqRWwYWAl5jhwmGHGtmwgaA5++tITaixvU/RipgbZIBwp/912s9AE5AZGs9EM3gSBx6OuQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Page 1</title>
 </head>
 
 <body>
-<header class="container navbar">
+<!-- <header class="container navbar">
     <img class="logo" src="images/logo.png" alt="logo">
     <div class="navbar-links">
         <nav>
@@ -24,14 +25,29 @@
         </a>
     </div>
     <a><i class="fa-solid fa-bars navbar-icone" id="navbar-icone" onclick="document.getElementById('navbar-icone').classList.add('active')"></i></a>
-</header>
+</header> -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="index.html">Acceuil <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="index2.html">A propos de nous</a>
+        <a class="nav-item nav-link" href="index3.html">Nos services</a>
+        <a class="nav-item nav-link disabled" href="index4.html">Contact</a>
+      </div>
+    </div>
+  </nav>
 
 <div class="container-fluid hero">
     <div class="hero-content">
         <p class="text-sm"> Pour tous vos besoins juridiques,</p>
         <h1 class="text-lg"> FAITES VOUS ASSISTER AVEC <br> EFFICACITE ET PROMPTITUDE</h1>
     </div>
-    <a class="btn btn-secondary hero-btn">DECOUVREZ-NOUS</a>
+    <a class="btn btn-secondary hero-btn" href="index3.html">DECOUVREZ-NOUS</a>
 </div>
 
 <section class="container">
@@ -39,21 +55,17 @@
     <div class="about mb-8 ">
         <div class="presentation">
 
-            <p class="about-content about-content-secondary p-4 p-sm-4"><br> <br> Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Corrupti explicabo quaerat earum voluptatem
-                illo cupiditate dolorum eum quae similique. Ad ab est unde
-                similique in optio tenetur accusantium consectetur inventore.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
-                natus quidem deserunt incidunt culpa ipsum porro ab optio? Impedit
-                id qui non illum odit praesentium laborum nisi molestiae ab numquam.</p>
+            <p class="about-content about-content-secondary p-4 p-sm-4"><br> <br> 
+            Nous sommes un groupe de jeunes dynamiques, soucieux d'oeuvrer pour l'essor 
+            de la sécurité juridique dans les affaires; qu'il s'agisse de l'acquisition
+             de biens mobiliers ou encore mobiliers (vente de terrains, recouvrement de loyers, 
+             mise en location etc...).Les formalités administratives pour la création d'entreprise 
+             ne sont pas du reste.</p>
 
-                <p class="about-content about-content-secondary p-4 p-sm-4 "><br> <br> Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Corrupti explicabo quaerat earum voluptatem
-                    illo cupiditate dolorum eum quae similique. Ad ab est unde
-                    similique in optio tenetur accusantium consectetur inventore.
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
-                    natus quidem deserunt incidunt culpa ipsum porro ab optio? Impedit
-                    id qui non illum odit praesentium laborum nisi molestiae ab numquam.</p>
+                <p class="about-content about-content-secondary p-4 p-sm-4 "><br> <br> Le recours à nous, c'est 
+             la garantie d'une solution efficace et ce dans de meilleurs délais. Nous mettons à votre disposition 
+            notre expertise, notre savoir faire ainsi que notre engagement à vous décharger de vos tracas administratifs.
+         </p>
         </div>
     </div>
 
@@ -64,10 +76,10 @@
         <div class="colonne p-3 pb-8">
             <h3 class="title-3">LIENS USUELS</h3>
             <ul class="pt-4 footer-link">
-                <li><a href="#">Acceuil</a></li>
-                <li><a href="#">A propos de nous</a></li>
-                <li><a href="#">Nos services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="index2.html">A propos de nous</a></li>
+                <li><a href="index3.html">Nos services</a></li>
+                <li><a href="index4.html">Contact</a></li>
             </ul>
         </div>
         <div class="colonne p-3 pb-8">
