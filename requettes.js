@@ -1,4 +1,4 @@
-// Getting elements on the page
+// section requettes de la page 3
 var input = document.getElementById("Input");
 var ul = document.getElementById("requetteList");
 

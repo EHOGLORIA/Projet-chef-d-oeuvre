@@ -1,3 +1,5 @@
+
+<!-- connection de la newsletter à la base de données -->
 <?php
 
 $servername = "localhost";
